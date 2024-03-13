@@ -8,16 +8,26 @@ body {
   padding: 2rem;
 }
 
+.add-task button {
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
 ul {
   & li {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 
     & span {
       margin-right: 20px;
     }
 
     .remove-btn {
+      color: white;
       width: 30px;
       aspect-ratio: 1;
       background-color: red;

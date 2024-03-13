@@ -19,10 +19,12 @@ createApp({
     },
 
     addTask() {
-      let newObject = {};
-      newObject.text = this.newTask;
-      newObject.done = false;
-      this.toDoList.unshift(newObject);
+      if (this.newTask.length >= 3) {
+        let newObject = {};
+        newObject.text = this.newTask;
+        newObject.done = false;
+        this.toDoList.unshift(newObject);
+      }
     },
   },
 }).mount("#app");
