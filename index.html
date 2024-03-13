@@ -16,6 +16,12 @@
   </head>
   <body>
     <div id="app">
+      <div class="add-task">
+        <input type="text" v-model="newTask" />
+        <p>{{newTask}}</p>
+        <button class="add" @click="addTask()">Add</button>
+      </div>
+
       <ul>
         <li v-for="(task, index) in toDoList">
           <span :class="task.done == true ? 'done' : ''">{{task.text}}</span>
