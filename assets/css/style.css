@@ -8,6 +8,26 @@ body {
   padding: 2rem;
 }
 
+ul {
+  & li {
+    display: flex;
+    align-items: center;
+
+    & span {
+      margin-right: 20px;
+    }
+
+    .remove-btn {
+      width: 30px;
+      aspect-ratio: 1;
+      background-color: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
 .done {
   text-decoration: line-through;
 }
